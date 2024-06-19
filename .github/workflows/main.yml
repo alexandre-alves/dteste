@@ -17,15 +17,15 @@ jobs:
          username: ${{ secrets.USER  }}
          password: ${{ secrets.PASSWORD }}
 
-         - name: Build and push Docker images
-           uses: docker/build-push-action@v6.0.1
-           with:
-             context: .
-             file: .
-             push: true
-             tags: |
-               ssatangoss/dcodesxwv:v1
-               ssatangoss/dcodesxwv:latest
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v6.0.1
+        with:
+          context: .
+          file: .
+          push: true
+          tags: |
+            ssatangoss/dcodesxwv:v1
+            ssatangoss/dcodesxwv:latest
          
       
     
