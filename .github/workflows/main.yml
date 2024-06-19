@@ -25,6 +25,7 @@ jobs:
              push: true
              tags: |
                ssatangoss/dcodesxwv:v1
+               ssatangoss/dcodesxwv:latest
          
       
     
